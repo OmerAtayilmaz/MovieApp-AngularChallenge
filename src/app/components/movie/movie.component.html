@@ -1,4 +1,8 @@
 <ul>
+    <li>
+        <img src="https://image.tmdb.org/t/p/w500/{{dataList?.poster_path}}"/>
+    </li>
+
     <li>{{dataList?.adult}}</li>
     <li>{{dataList?.overview}}</li>
 
@@ -7,10 +11,7 @@
     <li>{{dataList?.popularity}}</li>
 
     <li>{{dataList?.original_title}}</li>
-    <li>
-        <img src="https://image.tmdb.org/t/p/w500/{{dataList?.poster_path}}"/>
-    </li>
-
+   
     <!--  <li *ngFor="let movie of dataList">
         {{movie.overview}}
     </li> -->
