@@ -1,6 +1,9 @@
 <section id="movie-list">
- <ul>
-    <li *ngFor="let item of movieList?.items" style="background-image:url('https://image.tmdb.org/t/p/w500/{{item?.poster_path}}');" class="mov__item" >
+    <div class="movie--search">
+        <input class="form-control" type="text" [(ngModel)]="searchText">
+      </div>
+    <ul>
+    <li *ngFor="let item of movieList?.items | filter:searchText" style="background-image:url('https://image.tmdb.org/t/p/w500/{{item?.poster_path}}');" class="mov__item" >
         <a href="/movie/detail/{{item.id}}">Details</a>
     </li>
  </ul>

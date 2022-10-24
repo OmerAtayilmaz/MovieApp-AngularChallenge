@@ -8,6 +8,7 @@ import { MovieService } from 'src/app/services/movie.service';
 })
 export class MovieListComponent implements OnInit {
   movieList:any;
+  searchText:any;
   constructor(private movieService:MovieService) { }
 
   ngOnInit(): void {

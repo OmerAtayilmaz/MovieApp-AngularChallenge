@@ -20,4 +20,9 @@ export class MovieService {
   getMovieList(){
     return this.httpClient.get(this.listLink);
   }
+
+  getQueryResult(q:string){
+    let queryResultList=`https://api.themoviedb.org/3/search/movie?page=1&api_key=${API_TOKEN}&query=${q}`;
+    return this.httpClient.get(queryResultList);
+  }
 }
