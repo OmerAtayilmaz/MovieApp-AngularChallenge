@@ -1,0 +1,9 @@
+<section id="movie-list">
+ <ul>
+    <li class="mov__item" *ngFor="let item of movieList?.items">
+        <h1>{{item.title}}</h1>
+        <a href="/movie/detail/{{item.id}}">Details</a>
+            
+    </li>
+ </ul>
+</section>
