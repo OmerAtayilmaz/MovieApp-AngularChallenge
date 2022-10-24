@@ -1,9 +1,7 @@
 <section id="movie-list">
  <ul>
-    <li class="mov__item" *ngFor="let item of movieList?.items">
-        <h1>{{item.title}}</h1>
+    <li *ngFor="let item of movieList?.items" style="background-image:url('https://image.tmdb.org/t/p/w500/{{item?.poster_path}}');" class="mov__item" >
         <a href="/movie/detail/{{item.id}}">Details</a>
-            
     </li>
  </ul>
 </section>

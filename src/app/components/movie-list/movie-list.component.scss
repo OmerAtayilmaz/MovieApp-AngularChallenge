@@ -1,7 +1,7 @@
 #movie-list {
  ul {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding:25px;
@@ -15,9 +15,13 @@
         background: #bac7db;
         margin-bottom: 12px;
 
-        & h1 {
-            text-align: center;
-            font-weight: 100;
+        & a {
+            text-decoration: none;
+            display: block;
+            background: rgba(0,0,0,0.5);
+            padding:12px 25px;
+            color:white;
+            border:1px solid wheat;
         }
     }
  }

@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { MovieService } from 'src/app/services/movie.service';
-
+import { MovieModel } from '../models/Movie';
 @Component({
   selector: 'app-movie-list',
   templateUrl: './movie-list.component.html',
