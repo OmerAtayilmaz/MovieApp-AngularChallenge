@@ -1,18 +1,13 @@
-<ul>
-    <li>
+<div class="detail">
+    <div class="detail-img">
         <img src="https://image.tmdb.org/t/p/w500/{{dataList?.poster_path}}"/>
-    </li>
+    </div>
+    <div class="detail-text">  
+        <span>Overview: {{dataList?.overview}}</span>
+        <span>Budget: {{dataList?.budget}} $</span>
+        <span>Popularity: {{dataList?.popularity}}</span>
+        <span>Original Title: {{dataList?.original_title}}</span>
+        <a href="/movies">Movies List</a>
+    </div>
 
-    <li>{{dataList?.adult}}</li>
-    <li>{{dataList?.overview}}</li>
-
-    <li>{{dataList?.budget}}</li>
-
-    <li>{{dataList?.popularity}}</li>
-
-    <li>{{dataList?.original_title}}</li>
-   
-    <!--  <li *ngFor="let movie of dataList">
-        {{movie.overview}}
-    </li> -->
-</ul>
+</div>
