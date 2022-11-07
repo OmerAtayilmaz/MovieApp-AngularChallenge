@@ -18,7 +18,7 @@ export class MovieListComponent implements OnInit {
       setTimeout(()=>{
         this.movieList=res
         this.loader=false;
-      },3000);
+      },500);
   });
   }
 
