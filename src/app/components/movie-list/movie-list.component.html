@@ -4,7 +4,17 @@
       </div>
     <ul>
     <li *ngFor="let item of movieList?.items | filter:searchText" style="background-image:url('https://image.tmdb.org/t/p/w500/{{item?.poster_path}}');" class="mov__item" >
-        <a href="/movie/detail/{{item.id}}">Details</a>
+        <a href="/movie/detail/{{item.id}}">Details
+        </a>
     </li>
+    
  </ul>
 </section>
+<ngx-skeleton-loader  count="10" appearance="" animation="progress"  *ngIf="loader" [theme]="{
+  'height.px':400,
+  'width.px':300,
+  'background-color':'#efefef',
+  'padding.px':5,
+  'margin.px':10
+  }"  ></ngx-skeleton-loader>
+
