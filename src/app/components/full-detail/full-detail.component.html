@@ -1,0 +1,54 @@
+<table style="width:100%">
+    <tr>
+      <th>UpperCase Pipe >> Movie Title:</th>
+      <td>{{movie.title | uppercase}}</td>
+    </tr>
+    <tr>
+      <th>Backdrop Path:</th>
+      <td>{{movie.backdrop_path}}</td>
+    </tr>
+    <tr>
+      <th>Lowercase Pipe >> Overview:</th>
+      <td>{{movie.overview|lowercase}}</td>
+    </tr>
+    <tr>
+      <th>Currency Pipe >> Budget:</th>
+      <td>{{movie.budget|currency:'EUR'}}</td>
+    </tr>
+    <tr>
+      <th>Json Pipe >> Genres:</th>
+      <td>{{movie.genres|json }}</td>
+    </tr>
+    <tr>
+      <th>Homepage Link:</th>
+      <td>{{movie.homepage|titlecase}}</td>
+    </tr>
+    <tr>
+      <th>Movie ID:</th>
+      <td>{{movie.id}}</td>
+    </tr>
+    <tr>
+      <th>Popularity:</th>
+      <td>{{movie.popularity}}</td>
+    </tr>
+    <tr>
+      <th>Date Pipe >> Release Date:</th>
+      <td>{{movie.release_date|date:'medium'}} </td>
+    </tr>
+    <tr>
+      <th>video:</th>
+      <td>{{movie.video }}</td>
+    </tr>
+    <tr>
+      <th>Decimal Pipe >> Vote Average:</th>
+      <td>{{movie.vote_average | number:'1.1-2'}}</td>
+    </tr>
+    <tr>
+      <th>Percent Pipe >> Revenue:</th>
+      <td>{{movie.revenue|percent}}</td>
+    </tr>
+    <tr>
+      <th>CUSTOM PIPE>>>{{"home"|title}}</th>
+      <td><button routerLink="/">Back To Home</button></td>
+    </tr>
+</table>

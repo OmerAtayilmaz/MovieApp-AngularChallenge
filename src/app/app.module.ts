@@ -11,13 +11,17 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { FormsModule } from '@angular/forms';
 import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
 import { MovieGenreComponent } from './components/movie-genre/movie-genre.component';
+import { FullDetailComponent } from './components/full-detail/full-detail.component';
+import { TitlePipe } from './pipes/title.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     MovieComponent,
     MovieListComponent,
-    MovieGenreComponent
+    MovieGenreComponent,
+    FullDetailComponent,
+    TitlePipe
   ],
   imports: [
     BrowserModule,
