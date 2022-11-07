@@ -1,0 +1,8 @@
+<button (click)="isActive()">Show Genres</button>
+<!-- <small>{{theDataFromParent}}</small>
+<button (click)="send()">PARENTE</button> -->
+<div class="modal" (click)="isActive()" *ngIf="modelStatus">
+    <div class="container">
+        <div class="item" *ngFor="let item of genreList">{{item?.name}}</div>
+    </div>
+</div>
