@@ -6,8 +6,12 @@
         <span>Overview: {{dataList?.overview}}</span>
         <span>Budget: {{dataList?.budget}} $</span>
         <span>Popularity: {{dataList?.popularity}}</span>
-        <span>Original Title: {{dataList?.original_title}}</span>
+        <span>Original Title: {{dataList?.title}}</span>
         <a href="/movies">Movies List</a>
+        <app-movie-genre [genreList]="dataList?.genres"
+        (emitter)="changeModalStatus($event)"
+        [modelStatus]="modalStatus"
+        ></app-movie-genre>
     </div>
 
 </div>

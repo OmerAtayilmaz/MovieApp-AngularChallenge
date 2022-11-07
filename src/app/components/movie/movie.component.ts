@@ -4,14 +4,20 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-movie',
   templateUrl: './movie.component.html',
-  styleUrls: ['./movie.component.scss']
+  styleUrls: ['./movie.component.scss'],
 })
 export class MovieComponent implements OnInit {
 
   dataList:any;
+  modalStatus:boolean=false;
+
   constructor(private movieService:MovieService,private route:ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.route.params.subscribe(param=>this.movieService.getMovie(param["id"]).subscribe(res=>this.dataList=res));
+    this.route.params.subscribe(param=>this.movieService.getMovie(param["id"]).subscribe(res=>
+      this.dataList=res));
+  }
+  changeModalStatus(modalStatus:any){
+    this.modalStatus=!modalStatus;
   }
 }

@@ -10,13 +10,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { FormsModule } from '@angular/forms';
 import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
-
+import { MovieGenreComponent } from './components/movie-genre/movie-genre.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MovieComponent,
     MovieListComponent,
+    MovieGenreComponent
   ],
   imports: [
     BrowserModule,
