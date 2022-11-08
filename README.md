@@ -4,27 +4,26 @@
 - Service Injection
 - Angular Routing
 - NPX-Skeleton ile ghost loader
-- API GET Request
-- Search process
+- API GET Request (HttpClientModule)
+- Search process (Ng2SearchPipeModule)
 - Build-in & Custom Pipes
-
+- Template-driven Forms(FormsModule)
+- Form Validations (FormsModule)
 
 # Bu Projede ne Olacak?
-- Form - İletişim Formu
-- Form Validations (ForsModule) - İletişim Formu
 - Reactive Forms(ReactiveFormsModule)
 - Angular Lifecycle 
 ----
-- Build-in Directives
-- Change Detection
-- Template-driven Forms
-- Observable Pattern
-- Observable Lifecycle
 - Routing
     - Router Outlets
     - Router Links
     - Router Events
     - Router Guards
+- Observable Pattern
+- Observable Lifecycle
+----
+- Build-in Directives
+- Change Detection
 - Lazy Loading
 - State Management
 - Server Side Rendering(SSR) -> Angular Universal
