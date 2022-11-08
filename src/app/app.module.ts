@@ -8,12 +8,13 @@ import { MovieListComponent } from './components/movie-list/movie-list.component
 import { HttpClientModule } from '@angular/common/http';
 // search module
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
 import { MovieGenreComponent } from './components/movie-genre/movie-genre.component';
 import { FullDetailComponent } from './components/full-detail/full-detail.component';
 import { TitlePipe } from './pipes/title.pipe';
 import { ContactusComponent } from './components/contactus/contactus.component';
+import { ReactiveCvComponent } from './components/reactive-cv/reactive-cv.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,9 @@ import { ContactusComponent } from './components/contactus/contactus.component';
     MovieGenreComponent,
     FullDetailComponent,
     TitlePipe,
-    ContactusComponent
+    ContactusComponent,
+    ReactiveCvComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,8 @@ import { ContactusComponent } from './components/contactus/contactus.component';
     HttpClientModule,
     Ng2SearchPipeModule,
     FormsModule,
-    NgxSkeletonLoaderModule
+    NgxSkeletonLoaderModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
