@@ -13,6 +13,7 @@ import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
 import { MovieGenreComponent } from './components/movie-genre/movie-genre.component';
 import { FullDetailComponent } from './components/full-detail/full-detail.component';
 import { TitlePipe } from './pipes/title.pipe';
+import { ContactusComponent } from './components/contactus/contactus.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { TitlePipe } from './pipes/title.pipe';
     MovieListComponent,
     MovieGenreComponent,
     FullDetailComponent,
-    TitlePipe
+    TitlePipe,
+    ContactusComponent
   ],
   imports: [
     BrowserModule,

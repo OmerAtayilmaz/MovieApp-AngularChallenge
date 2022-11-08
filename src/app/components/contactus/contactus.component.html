@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row">
+    <form #contactForm="ngForm" (ngSubmit)="onSubmit($event)">
+      <div class="item">
+        <span>Subject <small *ngIf="subject.valid">✔</small></span>
+        <input [class.is-valid]="subject.invalid&&subject.touched" type="text" #subject="ngModel" ngModel name="subject" required minlength="5"/>
+      </div>
+      <div class="item">
+        <span>Message <small *ngIf="message.valid">✔</small></span>
+        <input type="text" #message="ngModel" ngModel minlength="10" required name="message"/>
+        <small [class.d-none]="message.valid ||  message.untouched">Message is required</small>
+      </div>
+
+
+
+      <div class="item">
+        <span>Category<small *ngIf="category.valid">✔</small></span>
+        <input type="text" #category="ngModel" ngModel name="category" minlength="10" required />
+        <small [class.d-none]="category.invalid && category.untouched">
+          <small *ngIf="category.errors?.required">Category required</small>
+          <small *ngIf="category.errors?.minlength">Max length 10</small>
+        </small>
+      </div>
+
+      <div class="item">CONCTACT</div>
+      <div class="item" ngModelGroup="contact"
+      style="display: block;">
+        <div style="display:flex;">
+          <span>E-mail<small *ngIf="email.valid">✔</small></span>
+          <input type="text" ngModel #email="ngModel" name="email" required />
+        </div>
+        <div class="item">
+          <span>Phone<small *ngIf="phone.valid">✔</small></span>
+          <input type="number" #phone="ngModel" ngModel name="phone" required/>
+        </div>
+      </div>
+      <div class="item">CONTACT-END</div>
+      <div class="item">
+        <span>Status<small *ngIf="status.valid">✔</small></span>
+        <select ngModel #status="ngModel" name="status" required>
+          <option *ngFor="let item of statusList">{{item}}</option>
+        </select>
+      </div>
+      <button type="submit">Join Us!</button>
+    </form>
+  </div>
+</div>

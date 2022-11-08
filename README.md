@@ -6,18 +6,18 @@
 - NPX-Skeleton ile ghost loader
 - API GET Request
 - Search process
-- 
+- Build-in & Custom Pipes
 
 
 # Bu Projede ne Olacak?
 - Form - İletişim Formu
 - Form Validations (ForsModule) - İletişim Formu
-- Build-in Pipes
+- Reactive Forms(ReactiveFormsModule)
+- Angular Lifecycle 
+----
 - Build-in Directives
 - Change Detection
-- Reactive Forms(ReactiveFormsModule)
 - Template-driven Forms
-- Angular Lifecycle
 - Observable Pattern
 - Observable Lifecycle
 - Routing
