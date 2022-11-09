@@ -9,11 +9,11 @@
 - Build-in & Custom Pipes
 - Template-driven Forms(FormsModule)
 - Form Validations (FormsModule)
+- Reactive Forms(ReactiveFormsModule)
+
 
 # Bu Projede ne Olacak?
-- Reactive Forms(ReactiveFormsModule)
-- Angular Lifecycle 
-----
+- Angular Lifecycle
 - Routing
     - Router Outlets
     - Router Links
