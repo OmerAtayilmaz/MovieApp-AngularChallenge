@@ -54,3 +54,19 @@
 .skeleton-container {
     background-color: red;
 }
+.new-banner{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+  a{
+    text-decoration: none;
+    display: block;
+    outline: none;
+    color:wheat;
+    font-weight: 600;
+    margin:5px 0 ;
+  }
+}
