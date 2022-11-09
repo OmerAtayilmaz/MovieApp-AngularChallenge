@@ -1,17 +1,18 @@
-import { Component, OnInit } from '@angular/core';
-import {FormBuilder, FormControl, FormGroup,Validators} from "@angular/forms";
+import {AfterViewInit, Component, DoCheck, OnDestroy, OnInit} from '@angular/core';
+import {FormBuilder, FormControl, FormGroup,Validators,FormArray} from "@angular/forms";
 import { forbiddenNameValidator } from 'src/app/validators/cv-form.validators';
 @Component({
   selector: 'app-reactive-cv',
   templateUrl: './reactive-cv.component.html',
   styleUrls: ['./reactive-cv.component.scss']
 })
-export class ReactiveCvComponent implements OnInit {
+export class ReactiveCvComponent implements OnInit,OnDestroy,AfterViewInit,DoCheck {
 
   cvForm=this.formBuilder.group({
     name:["",[Validators.minLength(25),forbiddenNameValidator]],
     title:[""],
     about:[""],
+    email:[""],
     address:this.formBuilder.group({
       city:[""],
       state:[""],
@@ -22,7 +23,8 @@ export class ReactiveCvComponent implements OnInit {
       highSchool:[""],
       licence:[""],
       mastery:[""]
-    })
+    }),
+    alternativeEmails:this.formBuilder.array([])
   });
  /* cvForm=new FormGroup({
     name:new FormControl(),
@@ -44,6 +46,13 @@ export class ReactiveCvComponent implements OnInit {
 
   constructor(private formBuilder:FormBuilder) { }
   ngOnInit(): void {}
+  ngOnDestroy():void{
+    //teardown
+  }
+  ngAfterViewInit():void{
+    //child views loaded
+  }
+  ngDoCheck():void{} //change detection
 
 
   onSubmit(){
@@ -69,7 +78,24 @@ export class ReactiveCvComponent implements OnInit {
   }
 
 
-  get user(){
+  get name(){
     return this.cvForm.get("name");
+  }
+  get title(){
+    return this.cvForm.get("title");
+  }
+
+  get about(){
+    return this.cvForm.get("about");
+  }
+  get alternativeEmails(){
+    return this.cvForm.get("alternativeEmails")  as FormArray;
+  }
+
+  get email(){
+    return this.cvForm.get("email");
+  }
+  addAlternativeEmail(){
+    this.alternativeEmails.push(this.formBuilder.control(''));
   }
 }
