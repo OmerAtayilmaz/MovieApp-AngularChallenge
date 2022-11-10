@@ -1,4 +1,30 @@
+@mixin display($display,$align,$justify,$direction){
+  display: $display;
+  align-items: $align;
+  justify-content: $justify;
+  direction: $direction;
+}
 .container{
     background:#242A32;
     min-height: 100vh;
+    margin:0;
+    padding:0;
+}
+
+.new-banner{
+  @include display(flex,center,space-evenly,column);
+  text-align: center;
+
+  a{
+    text-decoration: none;
+    display: block;
+    outline: none;
+    color:wheat;
+    font-weight: 600;
+    margin:5px 0 ;
+    background-color: #1e242b;
+    padding:4px 10px;
+    border:1px solid wheat;
+    border-radius: 5px;
+  }
 }

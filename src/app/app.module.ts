@@ -15,6 +15,10 @@ import { FullDetailComponent } from './components/full-detail/full-detail.compon
 import { TitlePipe } from './pipes/title.pipe';
 import { ContactusComponent } from './components/contactus/contactus.component';
 import { ReactiveCvComponent } from './components/reactive-cv/reactive-cv.component';
+import { FirstmenuComponent } from './components/routes/firstmenu/firstmenu.component';
+import { SecondmenuComponent } from './components/routes/secondmenu/secondmenu.component';
+import { ProductComponent } from './components/routes/product/product.component';
+import { NotFoundComponent } from './components/routes/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +30,10 @@ import { ReactiveCvComponent } from './components/reactive-cv/reactive-cv.compon
     TitlePipe,
     ContactusComponent,
     ReactiveCvComponent,
+    FirstmenuComponent,
+    SecondmenuComponent,
+    ProductComponent,
+    NotFoundComponent,
 
   ],
   imports: [

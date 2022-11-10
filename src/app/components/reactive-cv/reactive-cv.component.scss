@@ -8,6 +8,8 @@ $background:rgb(2,0,36);
   background: $background;
   color: white;
   height: 100vh;
+  margin:0;
+  padding:0;
   @include display(flex,center,space-evenly);
   .row{
     margin:25px;

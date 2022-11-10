@@ -1,0 +1,8 @@
+<ul>
+  <li><a  routerLinkActive="/routes">Home</a></li>
+  <li><a routerLink="/sub-menu/here" routerLinkActive="myactivelink">Products</a></li>
+  <li><a [routerLink]="['/sub-menu/','here']">Categories</a></li>
+  <li><button (click)="onClickEvent()">Here</button></li>
+  <li><button (click)="goToProduct()">Here</button></li>
+
+</ul>

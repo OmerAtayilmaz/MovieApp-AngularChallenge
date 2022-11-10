@@ -6,6 +6,10 @@ import { FullDetailComponent } from './components/full-detail/full-detail.compon
 import { MovieListComponent } from './components/movie-list/movie-list.component';
 import { MovieComponent } from './components/movie/movie.component';
 import { ReactiveCvComponent } from './components/reactive-cv/reactive-cv.component';
+import { FirstmenuComponent } from './components/routes/firstmenu/firstmenu.component';
+import { NotFoundComponent } from './components/routes/not-found/not-found.component';
+import { ProductComponent } from './components/routes/product/product.component';
+import { SecondmenuComponent } from './components/routes/secondmenu/secondmenu.component';
 
 const routes: Routes = [
   {
@@ -32,6 +36,20 @@ const routes: Routes = [
   {
     path:"reactive-cv",
     component:ReactiveCvComponent
+  },
+  {
+    path:"routes",
+    component:FirstmenuComponent
+  },
+  {
+    path:"sub-menu/here",
+    component:SecondmenuComponent
+  },{
+    path:"product/:id/:name",
+    component:ProductComponent
+  },{
+    path:"**",
+    component:NotFoundComponent
   }
 ];
 
