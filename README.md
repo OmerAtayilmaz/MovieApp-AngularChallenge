@@ -2,7 +2,7 @@
 
 - Angular Component Yapısı
 - Service Injection
-- Angular Routing
+- Angular Routing Basics
 - NPX-Skeleton ile ghost loader
 - API GET Request (HttpClientModule)
 - Search process (Ng2SearchPipeModule)
@@ -10,7 +10,6 @@
 - Template-driven Forms(FormsModule)
 - Form Validations (FormsModule)
 - Reactive Forms(ReactiveFormsModule)
-
 
 # Bu Projede ne Olacak?
 - Angular Lifecycle
