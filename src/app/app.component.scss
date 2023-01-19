@@ -1,11 +1,40 @@
+@import "./variables.scss";
 @mixin display($display,$align,$justify,$direction){
   display: $display;
   align-items: $align;
   justify-content: $justify;
   direction: $direction;
 }
+section {
+  background:$bg-color;
+  & nav{
+    width: 100%;
+    padding:10px 5px;
+    @include display(flex,center,space-around,row);
+    & a {
+      width:200px;
+      padding:10px 0;
+      letter-spacing: -0.5px;;
+      font-weight: 100;
+      font-size:18px;
+      height:22px;
+      border-radius: 28px;
+      &:hover {
+        background-color: $secondary-color;
+        color:$bg-color;
+        transition:0.3s;
+        color:$text-color;
+        
+      }
+      &:hover:before {
+        content:'👉 ';
+      }
+    }
+  
+  } 
+}
 .container{
-    background:#242A32;
+    background:$bg-color;
     min-height: 100vh;
     margin:0;
     padding:0;
@@ -19,12 +48,12 @@
     text-decoration: none;
     display: block;
     outline: none;
-    color:wheat;
+    color:$text-color;
     font-weight: 600;
     margin:5px 0 ;
     background-color: #1e242b;
     padding:4px 10px;
-    border:1px solid wheat;
+    border:1px solid $text-color;
     border-radius: 5px;
   }
 }

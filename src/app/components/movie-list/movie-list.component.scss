@@ -1,12 +1,15 @@
-
-
+@import "../../variables.scss";
+@mixin display($display,$align-items,$justify-content){
+    display:$display;
+    align-items:$align-items;
+    justify-content:$justify-content;
+}
 #movie-list {
  ul {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-evenly;
+    @include display(flex,flex-end,space-evenly);
     flex-wrap: wrap;
     padding:25px;
+
     &   li{
         width:300px;
         height:400px;
@@ -14,16 +17,16 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        background: #bac7db;
+        background: $text-color;
         margin-bottom: 12px;
 
         & a {
             text-decoration: none;
             display: block;
-            background: rgba(0,0,0,0.5);
+            background: rgba($bg-color,0.5);
             padding:12px 25px;
-            color:white;
-            border:1px solid wheat;
+            color:$text-color;
+            border:1px solid $text-color;
             margin:2px;
         }
     }
@@ -31,7 +34,7 @@
 
  .movie--search{
     width: 100%;
-    background-color: #1e242b;
+    background-color:$secondary-color;
     height: 50px;
     display: flex;
     align-items: center;
