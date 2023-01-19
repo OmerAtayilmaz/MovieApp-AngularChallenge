@@ -19,7 +19,7 @@ import { FirstmenuComponent } from './components/routes/firstmenu/firstmenu.comp
 import { SecondmenuComponent } from './components/routes/secondmenu/secondmenu.component';
 import { ProductComponent } from './components/routes/product/product.component';
 import { NotFoundComponent } from './components/routes/not-found/not-found.component';
-
+import { TyperComponent } from './components/typer/typer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +34,7 @@ import { NotFoundComponent } from './components/routes/not-found/not-found.compo
     SecondmenuComponent,
     ProductComponent,
     NotFoundComponent,
-
+    TyperComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="text-section">
+        <div class="long-text">
+            {{myText}}
+        </div>
+        <div class="text-section-score">
+            <ul>
+                <li>Word:{{correctWords}} </li>
+                <li>Sentence:{{sentences}} </li>
+                <li>Mistakes:{{mistakes}} </li>
+            </ul>
+        </div>
+    </div>
+    <hr />
+    <div class="input-section">
+        <input (input)="(onUpdateText($event))" type="text" class="form-control" placeholder="Type here..." />
+    </div>
+</div>

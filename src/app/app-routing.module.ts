@@ -10,7 +10,7 @@ import { FirstmenuComponent } from './components/routes/firstmenu/firstmenu.comp
 import { NotFoundComponent } from './components/routes/not-found/not-found.component';
 import { ProductComponent } from './components/routes/product/product.component';
 import { SecondmenuComponent } from './components/routes/secondmenu/secondmenu.component';
-
+import { TyperComponent } from './components/typer/typer.component';
 const routes: Routes = [
   {
     path:"",
@@ -47,7 +47,12 @@ const routes: Routes = [
   },{
     path:"product/:id/:name",
     component:ProductComponent
-  },{
+  },
+  {
+    path:"typer",
+    component:TyperComponent
+  }
+  ,{
     path:"**",
     component:NotFoundComponent
   }
