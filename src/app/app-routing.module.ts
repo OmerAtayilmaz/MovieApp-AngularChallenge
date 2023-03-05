@@ -11,6 +11,7 @@ import { NotFoundComponent } from './components/routes/not-found/not-found.compo
 import { ProductComponent } from './components/routes/product/product.component';
 import { SecondmenuComponent } from './components/routes/secondmenu/secondmenu.component';
 import { TyperComponent } from './components/typer/typer.component';
+import {ScrollingsComponent} from "./components/scrollings/scrollings.component";
 const routes: Routes = [
   {
     path:"",
@@ -51,6 +52,10 @@ const routes: Routes = [
   {
     path:"typer",
     component:TyperComponent
+  },
+  {
+    path:"scrolling",
+    component:ScrollingsComponent
   }
   ,{
     path:"**",

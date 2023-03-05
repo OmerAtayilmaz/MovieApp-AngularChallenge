@@ -1,0 +1,33 @@
+<div style="padding:25px; color:white; font-size:24px;">
+  <p>In web development, scrolling refers to the ability of a user to navigate through a webpage or application by moving the viewport up or down. There are several different types of scrolling that can be implemented in web development, including:
+
+    Regular scrolling: This is the default scrolling behavior that most webpages have, where the user can scroll up and down through the content using a mouse, touchpad, or keyboard.
+
+    Infinite scrolling: This type of scrolling loads new content as the user scrolls down the page, allowing for an "infinite" amount of content to be displayed.
+
+    Virtual scrolling: This type of scrolling only renders the visible items on the screen and discards the rest, improving the performance of the webpage.
+
+    Sticky scrolling: This type of scrolling keeps a specific element fixed to the top or bottom of the screen while the user scrolls, allowing easy access to navigation or other important elements.
+
+    Parallax scrolling: This type of scrolling creates a 3D effect by moving elements at different speeds as the user scrolls, creating depth and visual interest.
+
+    Smooth scrolling: This type of scrolling creates a smooth animation when the user scrolls, making the experience more enjoyable.
+
+    Custom scrolling: This type of scrolling is a combination of different types of scrolling, which can be created by using JavaScript, CSS or other libraries to create unique scrolling behavior.
+  </p>
+  <ul>
+    <li>Regular Scrolling</li>
+    <li>Infinite Scrolling</li>
+    <li>Virtual Scrolling</li>
+    <li>Sticky Scrolling</li>
+    <li>Parallax Scrolling</li>
+    <li>Custom Scrolling</li>
+  </ul>
+  <div class="product-container">
+    <div *ngFor="let product of products;index as id"   class="card" >
+      <h3>{{product.name}}</h3>
+      <small>{{product.price}}</small>
+    </div>
+  </div>
+
+</div>
